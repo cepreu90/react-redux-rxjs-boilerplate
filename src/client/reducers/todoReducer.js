@@ -1,9 +1,11 @@
 import { ADD, SUB } from '../actions/todoAction'
 
+// init state of the values for the store: counter.
 const initState = {
     counter: 0,
 }
 
+// conter reducer. Will incroment or decrement the value in the store based on the action
 const counter = (state = initState, action) => {
     switch (action.type) {
         case ADD: {
